@@ -1,2 +1,65 @@
 @import "globals";
 @import "footer";
+
+.heroContainer {
+  max-width: 2000px;
+  height: 100vh;
+  max-height: 1160px;
+  display: flex;
+  margin: auto;
+}
+.comingSoonSection {
+  // position: relative;
+  flex-grow: 1;
+  height: 100%;
+  min-height: 800px;
+  background-image: url("/images/bg-pattern-desktop.svg"),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-size: cover;
+  padding-left: 166px;
+  padding-top: 66px;
+  .logoImg {
+    margin-bottom: 128px;
+  }
+  .contForh1 {
+    width: 366px;
+    letter-spacing: 17px;
+    margin-right: 25px;
+
+    h1 {
+      font-size: 64px;
+      text-transform: uppercase;
+      line-height: 1.09;
+      color: hsl(0, 6%, 24%);
+      margin-bottom: 20px;
+
+      span {
+        font-weight: 300;
+        // line-height: 1;
+        color: hsl(0, 36%, 70%);
+      }
+    }
+  }
+  .text {
+    max-width: 430px;
+    line-height: 1.73;
+    margin-bottom: 42px;
+    margin-right: 15px;
+    color: hsl(0, 36%, 70%);
+  }
+}
+
+@import "emailComponent";
+
+.imageSection {
+  flex-basis: 42%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: 100%;
+  min-height: 800px;
+  max-height: 1160px;
+  background-image: url("/images/hero-desktop.jpg");
+  background-size: cover;
+}
+
+@import "queries";

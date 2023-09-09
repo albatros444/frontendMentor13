@@ -14,6 +14,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 body h1,
 body h2,
@@ -41,6 +42,224 @@ input {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.heroContainer {
+  max-width: 2000px;
+  height: 100vh;
+  max-height: 1160px;
+  display: flex;
+  margin: auto;
+}
+
+.comingSoonSection {
+  flex-grow: 1;
+  height: 100%;
+  min-height: 800px;
+  background-image: url("/images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-size: cover;
+  padding-left: 166px;
+  padding-top: 66px;
+}
+.comingSoonSection .logoImg {
+  margin-bottom: 128px;
+}
+.comingSoonSection .contForh1 {
+  width: 366px;
+  letter-spacing: 17px;
+  margin-right: 25px;
+}
+.comingSoonSection .contForh1 h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+  line-height: 1.09;
+  color: hsl(0, 6%, 24%);
+  margin-bottom: 20px;
+}
+.comingSoonSection .contForh1 h1 span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+.comingSoonSection .text {
+  max-width: 430px;
+  line-height: 1.73;
+  margin-bottom: 42px;
+  margin-right: 15px;
+  color: hsl(0, 36%, 70%);
+}
+
+.email {
+  padding-bottom: 80px;
+}
+.email__contr {
+  display: flex;
+  justify-content: space-between;
+  max-width: 440px;
+  height: 53px;
+  margin-right: 25px;
+  outline: 1px solid hsl(0, 12%, 79%);
+  border-radius: 55px;
+  text-align: center;
+}
+.email__contr.isInvalid {
+  outline: 2px solid hsl(0, 67%, 71%);
+}
+.email__contr__input {
+  flex-shrink: 1;
+  border: none;
+  background: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  padding-top: 4px;
+  padding-left: 30px;
+  padding-right: 20px;
+  width: 100%;
+}
+.email__contr__input::placeholder {
+  color: hsla(0, 36%, 70%, 0.5);
+}
+.email__contr__errorSignAndButton {
+  position: relative;
+  width: 138px;
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+.email__contr__errorSignAndButton .errorImg {
+  padding-top: 5px;
+  display: none;
+}
+.email__contr__errorSignAndButton .errorImg.isInvalid {
+  display: block;
+}
+.email__contr__errorSignAndButton .button {
+  position: absolute;
+  left: 30px;
+  bottom: -1px;
+  display: block;
+  width: 98px;
+  height: 55px;
+  padding: 0;
+  margin-left: 12px;
+  border-radius: 54px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: inherit;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 10px 14px 20px hsl(0, 21%, 82%);
+}
+.email__contr__errorSignAndButton .button .arrowImg {
+  padding-top: 3px;
+}
+.email__contr__errorSignAndButton .button.isInvalid {
+  height: 56px;
+}
+.email__contr__errorSignAndButton .button:hover {
+  background: linear-gradient(135deg, hsl(0, 80%, 92%), hsl(0, 74%, 88%));
+  box-shadow: 0 15px 20px hsl(0, 46%, 82%);
+}
+.email__invalidMessage {
+  display: none;
+  margin-top: 13px;
+  margin-left: 31px;
+  font-size: 13px;
+  color: hsl(0, 67%, 71%);
+}
+.email__invalidMessage.isInvalid {
+  display: block;
+}
+
+.imageSection {
+  flex-basis: 42%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: 100%;
+  min-height: 800px;
+  max-height: 1160px;
+  background-image: url("/images/hero-desktop.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 470px) {
+  .heroContainer {
+    display: block;
+    height: 800px;
+  }
+  .comingSoonSection {
+    background-image: none;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .comingSoonSection .logoImg {
+    width: 100px;
+    margin-top: 31px;
+    margin-left: 32px;
+    margin-bottom: 28px;
+  }
+  .comingSoonSection .bgImageMobile {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 31px;
+    background-image: url("/images/hero-mobile.jpg");
+    background-size: cover;
+  }
+  .comingSoonSection .paddingCont {
+    padding: 33px;
+    padding-right: 35px;
+  }
+  .comingSoonSection .paddingCont .contForh1 {
+    width: auto;
+    letter-spacing: 11px;
+    text-align: center;
+    margin-right: 0;
+  }
+  .comingSoonSection .paddingCont .contForh1 h1 {
+    font-size: 40px;
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+  .comingSoonSection .paddingCont .text {
+    width: auto;
+    margin-bottom: 33px;
+    margin-right: 0;
+    line-height: 1.57;
+    font-size: 14px;
+    text-align: center;
+  }
+  .email {
+    margin-bottom: 0;
+  }
+  .email__contr {
+    width: 100%;
+    height: 46px;
+    margin-right: 0;
+  }
+  .email__contr__input {
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 23px;
+  }
+  .email__contr__errorSignAndButton {
+    width: 90px;
+  }
+  .email__contr__errorSignAndButton .errorImg {
+    padding-top: 2px;
+    width: 20px;
+  }
+  .email__contr__errorSignAndButton .button {
+    height: 48px;
+    width: 63px;
+    left: 18px;
+    box-shadow: 0px 14px 20px hsl(0, 36%, 88%);
+  }
+  .email__contr__errorSignAndButton .button.isInvalid {
+    height: 49px;
+  }
+  .imageSection {
+    display: none;
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,88 @@
+@media screen and (max-width: 470px) {
+  .heroContainer {
+    display: block;
+    height: 800px;
+  }
+  .comingSoonSection {
+    background-image: none;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    padding-left: 0;
+    padding-top: 0;
+    .logoImg {
+      width: 100px;
+      margin-top: 31px;
+      margin-left: 32px;
+      margin-bottom: 28px;
+    }
+    .bgImageMobile {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 31px;
+      background-image: url("/images/hero-mobile.jpg");
+      background-size: cover;
+    }
+    .paddingCont {
+      padding: 33px;
+      padding-right: 35px;
+      .contForh1 {
+        width: auto;
+        letter-spacing: 11px;
+        text-align: center;
+        margin-right: 0;
+
+        h1 {
+          font-size: 40px;
+          line-height: 1.05;
+          margin-bottom: 16px;
+        }
+      }
+      .text {
+        width: auto;
+        margin-bottom: 33px;
+        margin-right: 0;
+
+        line-height: 1.57;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  .email {
+    margin-bottom: 0;
+    &__contr {
+      width: 100%;
+      height: 46px;
+      margin-right: 0;
+      &__input {
+        font-size: 14px;
+        padding-right: 10px;
+        padding-left: 23px;
+      }
+      &__errorSignAndButton {
+        width: 90px;
+        .errorImg {
+          padding-top: 2px;
+          width: 20px;
+        }
+        .button {
+          height: 48px;
+          width: 63px;
+          left: 18px;
+          box-shadow: 0px 14px 20px hsl(0, 36%, 88%);
+          &.isInvalid {
+            height: 49px;
+          }
+        }
+      }
+    }
+    &__invalidMessage {
+    }
+  }
+
+  /////////
+  .imageSection {
+    display: none;
+    font-size: 12px;
+  }
+}

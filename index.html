@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
@@ -20,17 +19,48 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+    <div class="heroContainer">
+      <div class="comingSoonSection">
+        <img class="logoImg" src="/images/logo.svg" alt="" />
+        <div class="bgImageMobile"></div>
+        <div class="paddingCont">
+          <div class="contForh1">
+            <h1><span>We're</span> coming soon</h1>
+          </div>
+          <p class="text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="email">
+            <div class="email__contr">
+              <input
+                type="email"
+                class="email__contr__input"
+                placeholder="Email Address"
+              />
+              <div class="email__contr__errorSignAndButton">
+                <img class="errorImg" src="/images/icon-error.svg" alt="" />
+                <button type="button" class="button">
+                  <img class="arrowImg" src="/images/icon-arrow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <p class="email__invalidMessage">Please provide a valid email</p>
+          </div>
+        </div>
+      </div>
+      <div class="imageSection"></div>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Alexander</a>.
+        </p>
+      </footer>
+    </div>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+    <script src="/main.js"></script>
   </body>
 </html>
